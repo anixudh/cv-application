@@ -12,16 +12,16 @@ class EduInfo extends Component {
             id="school-name"
             type="text"
           ></input>
-          <label htmlFor="from">From:</label>
+          <label htmlFor="school-from">From:</label>
           <input
             onChange={this.props.changeSchoolFrom}
-            id="from"
+            id="school-from"
             type="date"
           ></input>
-          <label htmlFor="to">To:</label>
+          <label htmlFor="school-to">To:</label>
           <input
             onChange={this.props.changeSchoolTo}
-            id="to"
+            id="school-to"
             type="date"
           ></input>
           <label htmlFor="score">Score:</label>
