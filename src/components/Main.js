@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import EduInfo from "./CVFields/EduInfo";
 import UserInfo from "./CVFields/UserInfo";
 import WorkExp from "./CVFields/WorkExp";
+import PreviewMain from "./CVPreview/PreviewMain";
 
 class Main extends Component {
   constructor(props) {
@@ -337,6 +338,11 @@ class Main extends Component {
         <button onClick={delWorkExp} className="del-workExp">
           DELETE
         </button>
+        <PreviewMain
+          userInfo={this.state.userInfo}
+          eduInfo={this.state.eduInfo}
+          workExp={this.state.workExp}
+        />
       </div>
     );
   }
