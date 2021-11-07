@@ -16,26 +16,32 @@ class PreviewMain extends Component {
           userMobile={mobile}
           userAddress={address}
         />
-        {this.props.eduInfo.map((edu) => {
-          return (
-            <EduInfoPreview
-              name={edu.name}
-              schoolFrom={edu.schoolFrom}
-              schoolTo={edu.schoolTo}
-              score={edu.score}
-            />
-          );
-        })}
-        {this.props.workExp.map((work) => {
-          return (
-            <WorkExpPreview
-              name={work.name}
-              companyFrom={work.companyFrom}
-              companyTo={work.companyTo}
-              position={work.position}
-            />
-          );
-        })}
+        <div className="eduinfo-preview-main">
+          <u className="head">Education:</u>
+          {this.props.eduInfo.map((edu) => {
+            return (
+              <EduInfoPreview
+                name={edu.name}
+                schoolFrom={edu.schoolFrom}
+                schoolTo={edu.schoolTo}
+                score={edu.score}
+              />
+            );
+          })}
+        </div>
+        <div className="workexp-preview-main">
+          <u className="head">Professional Experience:</u>
+          {this.props.workExp.map((work) => {
+            return (
+              <WorkExpPreview
+                name={work.name}
+                companyFrom={work.companyFrom}
+                companyTo={work.companyTo}
+                position={work.position}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   }

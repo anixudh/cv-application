@@ -11,24 +11,28 @@ class WorkExp extends Component {
             onChange={this.props.changeCompanyName}
             id="company-name"
             type="text"
+            class="form-control"
           ></input>
           <label htmlFor="company-from">From:</label>
           <input
             onChange={this.props.changeCompanyFrom}
             id="company-from"
             type="date"
+            class="form-control"
           ></input>
           <label htmlFor="company-to">To:</label>
           <input
             onChange={this.props.changeCompanyTo}
             id="company-to"
             type="date"
+            class="form-control"
           ></input>
           <label htmlFor="position">Position:</label>
           <input
             onChange={this.props.changeCompanyPosition}
             id="position"
             type="text"
+            class="form-control"
           ></input>
         </form>
       </div>

@@ -6,10 +6,14 @@ class UserInfoPreview extends Component {
     const { userName, userEmail, userMobile, userAddress } = this.props;
     return (
       <div className="userinfo-preview">
-        <div className="userName">Name:{userName}</div>
-        <div className="userEmail">Email:{userEmail}</div>
-        <div className="userMobile">Mobile:{userMobile}</div>
-        <div className="userAddress">Location:{userAddress}</div>
+        <div className="userinfo-preview-left">
+          <div className="userName">{userName}</div>
+        </div>
+        <div className="userinfo-preview-right">
+          <div className="userEmail">{userEmail}📧</div>
+          <div className="userMobile">{userMobile}📱</div>
+          <div className="userAddress">{userAddress}📍</div>
+        </div>
       </div>
     );
   }

@@ -305,7 +305,6 @@ class Main extends Component {
 
     return (
       <div className="main">
-        This is the main field.
         <UserInfo
           changeUserName={changeUserName}
           changeUserEmail={changeUserEmail}
@@ -319,10 +318,10 @@ class Main extends Component {
           changeSchoolScore={changeSchoolScore}
         />
         {this.state.eduInfoJSX}
-        <button onClick={addEduInfo} className="add-eduInfo">
+        <button onClick={addEduInfo} className="btn btn-success add-eduInfo ">
           ADD
         </button>
-        <button onClick={delEduInfo} className="del-eduInfo">
+        <button onClick={delEduInfo} className="btn btn-danger del-eduInfo">
           DELETE
         </button>
         <WorkExp
@@ -332,10 +331,10 @@ class Main extends Component {
           changeCompanyPosition={changeCompanyPosition}
         />
         {this.state.workExpJSX}
-        <button onClick={addWorkExp} className="add-workExp">
+        <button onClick={addWorkExp} className="btn btn-success add-workExp">
           ADD
         </button>
-        <button onClick={delWorkExp} className="del-workExp">
+        <button onClick={delWorkExp} className="btn btn-danger del-workExp">
           DELETE
         </button>
         <PreviewMain

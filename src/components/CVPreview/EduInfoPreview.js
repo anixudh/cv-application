@@ -5,10 +5,15 @@ class EduInfoPreview extends Component {
   render() {
     return (
       <div className="eduinfo-preview">
-        <div className="school-name">School Name:{this.props.name}</div>
-        <div className="school-from">From:{this.props.schoolFrom}</div>
-        <div className="school-to">To:{this.props.schoolTo}</div>
-        <div className="school-score">Score:{this.props.score}</div>
+        <div className="school-name">{this.props.name}</div>
+        <hr />
+        <div className="school-info">
+          <div className="school-score">Score: {this.props.score}</div>
+          <div className="school-from-to">
+            {this.props.schoolFrom.substring(0, 4)}-
+            {this.props.schoolTo.substring(0, 4)}
+          </div>
+        </div>
       </div>
     );
   }
